@@ -23,7 +23,7 @@ function App() {
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
       >
-        <BrowserRouter basename="/Nova-Bracelet">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
   <Routes>
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
