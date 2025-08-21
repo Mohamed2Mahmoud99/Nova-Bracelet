@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState } from "react";
 import "./App.css";
 import "./index.css";
@@ -24,17 +23,17 @@ function App() {
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-gray-100`}
       >
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="chat" element={<Chat />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <BrowserRouter basename="/Nova-Bracelet">
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="chat" element={<Chat />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
       </div>
     </>
   );
