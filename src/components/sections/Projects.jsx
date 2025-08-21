@@ -54,7 +54,7 @@ export const Projects = () => {
           {/* IMAGE RIGHT */}
           <div className="flex justify-center w-[300px] md:w-[500px] mx-auto mt-10">
             <img
-              src="public\\IMG_1101.png"
+              src="\IMG_1101.png"
               alt="Nova Care App"
               className="rounded-2xl shadow-lg max-w-full"
             />
